@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  my-app:
+    image: capture_test
+    command: "python main.py test01 --data_save_path=\"data\""
+    volumes:
+      - "./data:/app/data"
